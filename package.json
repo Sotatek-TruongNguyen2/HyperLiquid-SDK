@@ -24,7 +24,6 @@
   ],
   "sideEffects": false,
   "scripts": {
-    "prebuild": "npm run format",
     "build": "tsup",
     "test": "jest",
     "prepare": "node -e \"if (process.env.NODE_ENV !== 'production' && require('fs').existsSync('.git')) { require('child_process').execSync('npm run build', {stdio: 'inherit'}) }\"",
